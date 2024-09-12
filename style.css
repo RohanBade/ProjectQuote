@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    color:darkslategrey;
     box-sizing: border-box;
 }
 
@@ -13,7 +12,6 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
     padding: 10px;
 }
@@ -29,6 +27,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
 .logo, .theme{
     margin:20px;
 }
@@ -40,6 +39,7 @@ nav{
 .theme{
     width: 40px;
     height: 40px;
+    border-radius: 10px;
 }
 .elements{
     display: flex;
@@ -49,7 +49,7 @@ nav{
     gap: 50px;
 }
 .quotevalue{
-    font-size: 4rem;
+    font-size: 20px;
 }
 .select{
     display: flex;
@@ -63,15 +63,15 @@ nav{
 label{
     font-size: 1.5rem;
 }
-.generate, .random,#field, input{
+.generate,.random,#field, input{
     width:120px;
     padding:10px;
     font-size: 1.5rem;
     border: #333 solid 2px;
     border-radius: 10px;
 }
-#field{
-    width: 150px;
+.generate,#field{
+    width: 200px;
 }
 .left,.right{
     width:50px;
@@ -84,6 +84,33 @@ label{
     justify-content: center;
     gap:10px;
 }
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.light-theme *{
+    color : darkslategray;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+.dark-theme button {
+    background-color: #555;
+    color: #f0f0f0;
+}
+.dark-theme .logo{
+    color: white;
+}
+.dark-theme .left:hover, .right:hover, .random:hover, .generate:hover,.theme:hover{
+    background-color: cadetblue;
+}
+
+/*
 .generate:hover,.random:hover,.left:hover,.right:hover{
     background-color: #008080;
 }
+*/
