@@ -27,7 +27,7 @@ A simple web application that displays quotes, allows users to change font sizes
 2. **Navigate to the project directory:**
 
     ```bash
-    cd ProjectCode
+    cd ProjectQuote
     ```
 
 3. **Open the `index.html` file in your web browser.**
@@ -43,3 +43,7 @@ A simple web application that displays quotes, allows users to change font sizes
 - **Theme Toggle**: Click the moon/sun icon in the navigation bar to switch between light and dark themes.
 - **Change Font Size**: Enter a new font size in the input box and click "Change Font" to adjust the quote's font size.
 - **Navigate Quotes**: Use the left and right arrow buttons to go through quotes, or click "Random" to get a new random quote.
+
+### Demo
+
+![pg](https://github.com/user-attachments/assets/4260cc98-c876-4f0e-8207-adfbb7535920)
