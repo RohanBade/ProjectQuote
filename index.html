@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Quote Generation</title>
-        <link rel="stylesheet" type="text/css" href="{%static 'home/style.css'%}">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,16 +19,18 @@
         <header>
             <nav>
                 <a class="logo" href="#">Quote</a>
-                <button><i class='bx bxs-moon'></i></button>
+                <button class="theme"><i class='bx bxs-moon'></i></button>
             </nav>
             <div class="elements">
+                <hr>
                 <div class="quote">
-                    <h1 class="quotevalue">Random Quote</h1>
+                    <q class="quotevalue">Science is not only compatible with spirituality; it is a profound source of spirituality. - Carl Sagan</q>
                 </div>
+                <hr>
                 <div class="select">
                     <!-- Dropdown button -->
                     <div class="dropdown">
-                        <label for="field">Select Field:</label>
+                        <label for="field">Field:</label>
                         <select id="field" name="field">
                           <option value="science">Science</option>
                           <option value="philosophy">Philosophy</option>
@@ -38,18 +40,19 @@
                     <!-- fontsize change -->
                     <div class="fontsize">
                         <label for="fontsize">Font size:</label>
-                        <input type="number" id="font" name="font" placeholder="Font size(px): " min="1" step="2"> 
+                        <input type="number" id="font" name="font" placeholder="64" width="20px" min="1" step="2"> 
                     </div>
                     <div class="go">
-                        <button class="generate">Generate Quote</button>
+                        <button class="generate">Generate</button>
                     </div>
                 </div>
                 <div class="change">
                     <button class="left"><i class='bx bxs-left-arrow'></i></button>
-                    <button class="random">Random</button>
+                    <button class="random" onclick="getRandomQuote()">Random</button>
                     <button class="right"><i class='bx bxs-right-arrow'></i></button>
                 </div>
             </div>
         </header>
     </body>
+    <script src="script.js"></script>
 </html>
