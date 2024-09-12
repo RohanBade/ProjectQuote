@@ -13,18 +13,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
-    <body>
+    <body class="light-theme">
         <!-- THEME CHANGE -->
         <!-- NEXT, PREV, RANDOM BUTTON -->
         <header>
             <nav>
                 <a class="logo" href="#">Quote</a>
-                <button class="theme"><i class='bx bxs-moon'></i></button>
+                <button class="theme"><i class='bx bx-moon'></i></button>
             </nav>
             <div class="elements">
                 <hr>
                 <div class="quote">
-                    <q class="quotevalue">Science is not only compatible with spirituality; it is a profound source of spirituality. - Carl Sagan</q>
+                    <h1 id="quotevalue" class="quotevalue">Science is not only compatible with spirituality; it is a profound source of spirituality. - Carl Sagan</h1>
                 </div>
                 <hr>
                 <div class="select">
@@ -32,7 +32,7 @@
                     <div class="dropdown">
                         <label for="field">Field:</label>
                         <select id="field" name="field">
-                          <option value="science">Science</option>
+                          <option value="science" selected>Science</option>
                           <option value="philosophy">Philosophy</option>
                           <option value="art">Art</option>
                         </select> 
@@ -40,16 +40,16 @@
                     <!-- fontsize change -->
                     <div class="fontsize">
                         <label for="fontsize">Font size:</label>
-                        <input type="number" id="font" name="font" placeholder="64" width="20px" min="1" step="2"> 
+                        <input type="number" id="font" name="font" placeholder="64" width="20px" step="2"> 
                     </div>
                     <div class="go">
-                        <button class="generate">Generate</button>
+                        <button class="generate" onclick="generate()">Change Font</button>
                     </div>
                 </div>
                 <div class="change">
-                    <button class="left"><i class='bx bxs-left-arrow'></i></button>
+                    <button class="left" onclick="previous()"><i class='bx bxs-left-arrow'></i></button>
                     <button class="random" onclick="getRandomQuote()">Random</button>
-                    <button class="right"><i class='bx bxs-right-arrow'></i></button>
+                    <button class="right" onclick="next()"><i class='bx bxs-right-arrow'></i></button>
                 </div>
             </div>
         </header>
